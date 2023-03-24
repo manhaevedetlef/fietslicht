@@ -20,7 +20,7 @@ input.onButtonPressed(Button.B, () => {
 
 basic.forever(function () {
 
-//O doof het scherm
+    //O doof het scherm
     if (status === 0) {
         basic.clearScreen()
     }
@@ -36,4 +36,10 @@ basic.forever(function () {
     else {
         basic.showIcon(IconNames.Chessboard)
     }
+    for (let x = 0; x <= 6 - 1; x++) {
+        for (let y = 0; y <= 5 - 1; y++) {
+
+        }
+    }
+
 })
