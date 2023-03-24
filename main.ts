@@ -5,7 +5,7 @@ let status = 1;
 
 input.onButtonPressed(Button.A, () => {
     status = status + 1
-    if (status > 2) {
+    if (status > 3) {
         status = 0;
     }
 })
@@ -32,14 +32,20 @@ basic.forever(function () {
         basic.pause(interval)
         basic.clearScreen()
     }
+    else if (status === 2) {
+        for (let x = 0; x <= 6 - 1; x++) {
+            for (let y = 0; y <= 5 - 1; y++) {
+                led.plot(x, y)
+                basic.pause(20)
+            }
+        }
+        basic.clearScreen()
+        
+    }
     //anders een schaakbord
     else {
         basic.showIcon(IconNames.Chessboard)
     }
-    for (let x = 0; x <= 6 - 1; x++) {
-        for (let y = 0; y <= 5 - 1; y++) {
 
-        }
-    }
 
 })
