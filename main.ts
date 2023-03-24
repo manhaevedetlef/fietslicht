@@ -32,6 +32,7 @@ basic.forever(function () {
         basic.pause(interval)
         basic.clearScreen()
     }
+    
     else if (status === 2) {
         for (let x = 0; x <= 6 - 1; x++) {
             for (let y = 0; y <= 5 - 1; y++) {
@@ -45,6 +46,8 @@ basic.forever(function () {
     //anders een schaakbord
     else {
         basic.showIcon(IconNames.Chessboard)
+        basic.pause(20)
+        basic.clearScreen()
     }
 
 
