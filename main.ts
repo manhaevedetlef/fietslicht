@@ -20,10 +20,11 @@ input.onButtonPressed(Button.B, () => {
 
 basic.forever(function () {
 
-
+//O doof het scherm
     if (status === 0) {
         basic.clearScreen()
     }
+    //1 toon diamand
     else if (status === 1) {
         basic.pause
             (interval)
@@ -31,6 +32,7 @@ basic.forever(function () {
         basic.pause(interval)
         basic.clearScreen()
     }
+    //anders een schaakbord
     else {
         basic.showIcon(IconNames.Chessboard)
     }
